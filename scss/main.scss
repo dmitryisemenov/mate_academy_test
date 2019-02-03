@@ -1,0 +1,228 @@
+@import 'normalize';
+@font-face {
+    font-family: 'Muller';
+    font-weight: bold;
+    src: local(Muller Bold), local(MullerBold), local(Muller-Bold), url("../fonts/MullerBold.otf"), format("opentype");
+}
+@font-face {
+    font-family: 'Muller';
+    font-weight: medium;
+    src: local(Muller Medium), local(MullerMedium), local(Muller-Medium), url("../fonts/MullerMedium.otf"), format("opentype");
+}
+main {
+  position: relative;
+  #introduction {
+    width: 100%;
+    background-size: 1000px;
+    background: linear-gradient(to bottom, #f0e7a8, #67cac3);
+    height: 1080px;
+    .bg {
+      float: right;
+   overflow: hidden;
+    }
+    .bg img {
+      margin: 0 -300px -380px 0;
+      position: relative;
+      top: -380px;
+      left: -200px;
+    }
+    .logo {
+      margin-left: 186px;
+    }
+    .exp {
+      font-family: 'Muller';
+      position: absolute;
+      top: 316px;
+      left: 195px;
+       &__title {
+         color: #71aa9d;
+         font-size: 23px;
+         font-weight: bold;
+      }
+      &__main {
+        font-weight: 400;
+        font-size: 62px;
+        line-height: 84px;
+        color: #161a14;
+        width: 910px;
+      }
+    }
+  }
+  .information {
+    width: 828px;
+    height: 215px;
+    float: left;
+    background-color: white;
+    z-index: 2;
+    position: absolute;
+    top: 740px;
+    left: 0;
+    border-radius: 0px 43px 43px 0px;
+    &__button {
+      width: 500px;
+      height: 67px;
+      background-color: #ff8141;
+      border-radius: 20px;
+      position: absolute;
+      top: 97px;
+      left: 191px;
+    }
+    &__textInButton {
+      font-family: 'Muller';
+      font-weight: bold;
+      font-size: 34px;
+      line-height: 0px;
+      margin-left: 125px;
+      color: white;
+      &--button {
+        text-decoration: none;
+        &:visited {
+          color: white;
+        }
+        &:active {
+          color: white;
+        }
+      }
+    }
+
+    }
+    .scroll {
+        position: absolute;
+        left: 960px;
+        top: 995px;
+        &__text {
+          color: white;
+          font-family: 'Muller';
+          font-size: 16px;
+          font-weight: bold;
+        }
+      &__triangle {
+         position: relative;
+         left: 46px;
+         margin-top: 17px;
+         width: 20px;
+
+        & > div {
+         width: 20px;
+         height: 2px;
+         background: white;
+       }
+        &>div:before {
+           content: " ";
+           display: block;
+           width: 20px;
+           height: 2px;
+           background: white;
+           -webkit-transform: rotate(-56deg);
+           -moz-transform: rotate(-56deg);
+           -ms-transform: rotate(-56deg);
+           transform: rotate(-56deg);
+           position: absolute;
+           top: 8px;
+           right: -5px;
+          }
+          &>div:after {
+             content: " ";
+             display: block;
+             width: 20px;
+             height: 2px;
+             background: white;
+             -webkit-transform: rotate(56deg);
+             -moz-transform: rotate(56deg);
+             -ms-transform: rotate(56deg);
+             transform: rotate(56deg);
+             position: absolute;
+             top: 8px;
+             left: -5px;
+           }
+         }
+        }
+        .promo {
+          position: relative;
+          width: 60%;
+          height: 1080px;
+          float: left;
+          overflow: hidden;
+          &__text {
+            position: absolute;
+            z-index: 2;
+            top: 50%;
+            left: 50%;
+          }
+          & iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .text {
+          width: 40%;
+          height: 1080px;
+          background-color: white;
+          float: right;
+          position: relative;
+          &__title {
+            font-family: 'Muller';
+            font-weight: bold;
+            font-size: 30px;
+            color: #394367;
+            align: left;
+            margin: 130px 0 0 130px;
+          }
+          &__list {
+            list-style-type: none;
+            line-height: 30px;
+            font-size: 26px;
+            margin-left: 90px;
+            & li i {
+              color: red;
+              float: left;
+              margin-right: 20px;
+            }
+            &--heart {
+              margin-top: 70px;
+            }
+          }
+        &__button {
+          width: 500px;
+          height: 67px;
+          background-color: #ff8141;
+          border-radius: 20px;
+          position: absolute;
+          top: 900px;
+          left: 191px;
+        }
+        &__textInButton {
+          font-family: 'Muller';
+          font-weight: bold;
+          font-size: 34px;
+          line-height: 0px;
+          margin-left: 125px;
+          color: white;
+          &--button {
+            text-decoration: none;
+            &:visited {
+              color: white;
+            }
+            &:active {
+              color: white;
+            }
+          }
+        }
+      }
+}
+.feedback {
+  width: 100%;
+  height: 200px;
+  background-color: #273d50;
+  float: none;
+  clear: both;
+  &__text {
+    font-family: 'Muller';
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 200px;
+    color: white;
+  }
+}

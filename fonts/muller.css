@@ -1,0 +1,4 @@
+@font-face {
+    font-family: 'Muller';
+    src: local(Muller Bold), local(MullerBold), local(Muller-Bold), url("MullerBold.otf"), format("opentype");
+}
