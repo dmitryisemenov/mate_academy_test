@@ -372,6 +372,7 @@ main #introduction .exp__title {
   color: #71aa9d;
   font-size: 23px;
   font-weight: bold;
+  background-color: #ff8141;
 }
 main #introduction .exp__main {
   font-weight: 400;
